@@ -1,0 +1,24 @@
+# Mybatis
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: 'true'
+
+# Dev
+spring:
+  thymeleaf:
+    cache: 'false'
+  freemarker:
+    cache: 'false'
+  devtools:
+    livereload:
+      enabled: 'true'
+
+# MySQL
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/perion_practice?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    password: '1234'
+
+
